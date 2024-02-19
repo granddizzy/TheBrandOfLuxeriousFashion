@@ -1,0 +1,66 @@
+.storeSections {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: stretch;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 65px;
+  gap: 30px;
+
+  &__item {
+    background-repeat: space;
+    background-position: center;
+  }
+
+  &_forMen {
+    background-image: url("../img/for_men.png");
+    min-height: 260px;
+  }
+
+  &_forWoman {
+    background-image: url("../img/for_woman.png");
+    min-height: 260px;
+  }
+
+  &_forKids {
+    background-image: url("../img/for_kids.png");
+    min-height: 260px;
+  }
+
+  &_forMen .fill, &_forWoman .fill, &_forKids .fill {
+    min-height: 260px;
+  }
+
+  &_accesories {
+    background-image: url("../img/accesories.png");
+    grid-column-start: 1;
+    grid-column-end: 4;
+    min-height: 180px;
+
+    .fill {
+      min-height: 180px;
+    }
+  }
+
+  .fill {
+    background-color: rgba(33, 22, 22, 0.70);
+    width: 100%;
+    @include flexCenter();
+    flex-direction: column;
+  }
+
+  &__text1 {
+    color: #FFF;
+    text-align: center;
+    @include fontStyle1(400);
+    font-size: 16px;
+  }
+
+  &__text2 {
+    color: $exclusiveColor;
+    @include fontStyle1(700);
+    font-size: 24px;
+    text-align: center;
+  }
+}

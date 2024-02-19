@@ -1,0 +1,66 @@
+@import "vars";
+
+.navigation {
+  background-color: #222;
+  margin: 0 auto;
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+
+  &__leftSide {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 41px;
+  }
+
+  &__rightSide {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 41px;
+  }
+
+  &__button {
+    background-color: #222;
+    border: none;
+    cursor: pointer;
+  }
+
+  .buttonBasket {
+    position: relative;
+  }
+
+  .basketCounter {
+    position: absolute;
+    top: -6px;
+    right: -8px;
+    background-color: $exclusiveColor;
+    border-radius: 50px;
+    min-width: 19px;
+    min-height: 19px;
+    color: #FFF;
+    font-family: Lato, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+}

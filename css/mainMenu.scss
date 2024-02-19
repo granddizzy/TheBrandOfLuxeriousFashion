@@ -1,0 +1,43 @@
+.mainMenu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 232px;
+  background-color: #FFF;
+  font-family: Lato, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 232px;
+  filter: drop-shadow(6px 4px 35px rgba(0, 0, 0, 0.21));
+  padding: 32px 33px 21px 33px;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s linear, opacity 0.3s linear;
+
+  h3 {
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 13px;
+  }
+
+  &__firstLevel a {
+    color: $exclusiveColor;
+  }
+
+  &__secondLevel a {
+    padding-left: 27px;
+    color: #6F6E6E;
+  }
+
+  li {
+    padding-top: 11px;
+  }
+
+  &.active {
+    visibility: visible;
+    opacity: 1;
+  }
+}
