@@ -4,9 +4,8 @@
 .banner {
   background-color: $bannerBackgroundColor;
 
-  &__container {
+  .bigContainer {
     @include flexCenter();
-    max-width: $siteWidth;
     flex-direction: row;
     flex-wrap: nowrap;
     margin: 0 auto;

@@ -1,0 +1,10 @@
+@import "vars";
+@import "mixins";
+
+.recommended {
+  &__items {
+    @include flexCenter();
+    gap: 30px;
+  }
+  margin: 128px 0 128px;
+}

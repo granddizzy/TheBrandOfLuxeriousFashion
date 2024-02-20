@@ -1,0 +1,28 @@
+@import "vars";
+@import "mixins";
+
+.breadсrumbs {
+  background-color: $bannerBackgroundColor;
+
+  .container {
+    min-height: 148px;
+    @include flexCenter();
+    justify-content: space-between;
+  }
+
+  &__leftSide {
+    color: $exclusiveColor;
+    @include fontStyle1(400);
+    font-size: 24px;
+  }
+
+  &__rightSide {
+    color: #636363;
+    @include fontStyle1(400);
+    font-size: 14px;
+  }
+
+  &__rightSide span {
+    color: $exclusiveColor;
+  }
+}
