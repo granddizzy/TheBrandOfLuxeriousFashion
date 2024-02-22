@@ -68,7 +68,11 @@
     justify-content: space-evenly;
   }
 
-  &__filterItem {
+  &__filterItem summary::after {
+    content: url("../img/filter_icon.svg");
+  }
+
+  &__filterItem summary{
     @include flexCenter();
     gap: 10px;
   }
