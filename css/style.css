@@ -311,7 +311,7 @@ img {
 
 .productSlider .bigContainer {
   background-color: #f7f7f7;
-  Height: 777px;
+  height: 777px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -327,6 +327,18 @@ img {
   align-items: center;
   align-content: center;
   cursor: pointer; }
+.productSlider #carouselExampleIndicators {
+  z-index: 0; }
+.productSlider .carousel .carousel-inner .carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
+.productSlider .carousel-item {
+  transition: opacity 1s !important; }
+  .productSlider .carousel-item img {
+    height: 777px;
+    padding-bottom: 60px; }
 
 .breadсrumbs {
   background-color: #F1E4E6; }
