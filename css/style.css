@@ -432,4 +432,56 @@ img {
     align-content: center;
     gap: 30px; }
 
+.catalog__filter {
+  color: #6F6E6E;
+  font-size: 14px;
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  height: 132px; }
+  .catalog__filter summary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center; }
+.catalog__filterLeftSide {
+  color: #000;
+  font-weight: 600; }
+  .catalog__filterLeftSide summary::after {
+    content: url("../img/filter_icon2.svg"); }
+  .catalog__filterLeftSide summary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 15px; }
+.catalog__filterLeftSide[open] summary {
+  color: #F16D7F; }
+.catalog__filterLeftSide[open] summary::after {
+  color: #F16D7F; }
+.catalog__filterCenterSide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 30px; }
+  .catalog__filterCenterSide summary::after {
+    content: url("../img/filter_icon.svg"); }
+  .catalog__filterCenterSide summary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 15px; }
+.catalog__filterRightSide {
+  width: 110px; }
+.catalog .feturedItems___items {
+  padding-top: 0; }
+
 /*# sourceMappingURL=style.css.map */
