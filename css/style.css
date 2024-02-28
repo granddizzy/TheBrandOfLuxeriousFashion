@@ -469,8 +469,6 @@ img {
 .catalog__filterLeftSide {
   color: #000;
   font-weight: 600; }
-  .catalog__filterLeftSide summary::after {
-    content: url("../img/filter_icon2.svg"); }
   .catalog__filterLeftSide summary {
     display: flex;
     justify-content: center;
@@ -494,7 +492,17 @@ img {
     justify-content: center;
     align-items: center;
     align-content: center;
-    gap: 15px; }
+    gap: 15px;
+    position: relative; }
+  .catalog__filterCenterSide .catalog__detailsBox {
+    background-color: #FFF;
+    box-shadow: 6px 4px 35px 0 rgba(0, 0, 0, 0.21);
+    padding: 10px;
+    width: 80px;
+    left: -10px;
+    margin-top: 5px; }
+.catalog details {
+  position: relative; }
 .catalog__filterRightSide {
   width: 110px; }
 .catalog .feturedItems___items {
@@ -520,9 +528,18 @@ img {
   color: #C4C4C4; }
   .catalog__pages a {
     color: #C4C4C4; }
-.catalog__leftButton {
+.catalog__leftButton, .catalog__rightButton {
   cursor: pointer; }
-.catalog__rightButton {
-  cursor: pointer; }
+.catalog__detailsBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  z-index: 3; }
+.catalog__menuSize, .catalog__menuTrending, .catalog__menuFilter, .catalog__menuPrice {
+  position: absolute; }
 
 /*# sourceMappingURL=style.css.map */

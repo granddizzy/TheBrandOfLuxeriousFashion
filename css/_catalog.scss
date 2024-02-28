@@ -20,8 +20,8 @@
     color: #000;
     font-weight: 600;
 
-    summary::after {
-      content: url("../img/filter_icon2.svg");
+    summary:first-child::after {
+      //content: url("../img/filter_icon2.svg");
     }
 
     summary {
@@ -49,7 +49,21 @@
     summary {
       @include flexCenter();
       gap: 15px;
+      position: relative;
     }
+
+    .catalog__detailsBox {
+      background-color: #FFF;
+      box-shadow: 6px 4px 35px 0 rgba(0, 0, 0, 0.21);
+      padding: 10px;
+      width: 80px;
+      left: -10px;
+      margin-top: 5px;
+    }
+  }
+
+  details {
+    position: relative;
   }
 
   &__filterRightSide {
@@ -79,11 +93,19 @@
     }
   }
 
-  &__leftButton {
+  &__leftButton, &__rightButton {
     cursor: pointer;
   }
 
-  &__rightButton {
-    cursor: pointer;
+  &__detailsBox {
+    @include flexCenter();
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    z-index: 3;
+  }
+
+  &__menuSize, &__menuTrending, &__menuFilter, &__menuPrice {
+    position: absolute;
   }
 }
