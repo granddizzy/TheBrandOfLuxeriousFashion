@@ -467,18 +467,49 @@ img {
     align-items: center;
     align-content: center; }
 .catalog__filterLeftSide {
-  color: #000;
-  font-weight: 600; }
+  color: #6F6E6E; }
   .catalog__filterLeftSide summary {
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
-    gap: 15px; }
-.catalog__filterLeftSide[open] summary {
-  color: #F16D7F; }
-.catalog__filterLeftSide[open] summary::after {
-  color: #F16D7F; }
+    justify-content: flex-start; }
+  .catalog__filterLeftSide .catalog__detailsBox2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    color: #6F6E6E;
+    font-family: Lato, sans-serif;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 400; }
+    .catalog__filterLeftSide .catalog__detailsBox2 a {
+      color: #6F6E6E; }
+.catalog__filterLeftSide > :first-child {
+  color: #000;
+  font-weight: 600; }
+.catalog__filterLeftSide > :first-child::after {
+  content: url("../img/filter_icon2.svg");
+  margin-left: 15px; }
+.catalog__menuFilter > :first-child::after {
+  content: url("../img/filter_icon2.svg");
+  margin-left: 15px; }
+.catalog__filterLeftSide .catalog__detailsBox {
+  background-color: #FFF;
+  box-shadow: 6px 4px 35px 0 rgba(0, 0, 0, 0.21);
+  padding: 20px;
+  width: 360px;
+  top: -16px;
+  margin-top: 5px; }
+  .catalog__filterLeftSide .catalog__detailsBox h1 {
+    color: #F16D7F; }
+  .catalog__filterLeftSide .catalog__detailsBox details[open] summary {
+    color: #F16D7F; }
 .catalog__filterCenterSide {
   display: flex;
   justify-content: center;
@@ -539,7 +570,14 @@ img {
   align-items: flex-start;
   gap: 10px;
   z-index: 3; }
+  .catalog__detailsBox details {
+    width: 100%; }
 .catalog__menuSize, .catalog__menuTrending, .catalog__menuFilter, .catalog__menuPrice {
   position: absolute; }
+.catalog__topLevel {
+  border-left: 5px solid #F16D7F;
+  padding: 10px;
+  border-bottom: 1px solid #EBEBEB;
+  width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
