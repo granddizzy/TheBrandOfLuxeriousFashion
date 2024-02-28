@@ -30,7 +30,7 @@
     }
   }
 
-  &__filterLeftSide[open] summary{
+  &__filterLeftSide[open] summary {
     color: $exclusiveColor;
   }
 
@@ -58,5 +58,32 @@
 
   .feturedItems___items {
     padding-top: 0;
+  }
+
+  &__pages {
+    margin: auto;
+    height: 44px;
+    border: 1px solid rgb(235, 235, 235);
+    margin-top: 48px;
+    margin-bottom: 96px;
+    #display: inline-block;
+    @include flexCenter();
+    width: 240px;
+    gap: 15px;
+    @include fontStyle1(400);
+    font-size: 16px;
+    color: #C4C4C4;
+
+    a {
+      color: #C4C4C4;
+    }
+  }
+
+  &__leftButton {
+    cursor: pointer;
+  }
+
+  &__rightButton {
+    cursor: pointer;
   }
 }

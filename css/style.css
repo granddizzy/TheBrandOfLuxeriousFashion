@@ -499,5 +499,30 @@ img {
   width: 110px; }
 .catalog .feturedItems___items {
   padding-top: 0; }
+.catalog__pages {
+  margin: auto;
+  height: 44px;
+  border: 1px solid #ebebeb;
+  margin-top: 48px;
+  margin-bottom: 96px;
+  #display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 240px;
+  gap: 15px;
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #C4C4C4; }
+  .catalog__pages a {
+    color: #C4C4C4; }
+.catalog__leftButton {
+  cursor: pointer; }
+.catalog__rightButton {
+  cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */
