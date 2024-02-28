@@ -14,6 +14,10 @@
     summary {
       @include flexCenter();
     }
+
+    details {
+      position: relative;
+    }
   }
 
   &__filterLeftSide {
@@ -37,35 +41,21 @@
         color: #6F6E6E;
       }
     }
-  }
 
-  &__filterLeftSide > :first-child {
-    color: #000;
-    font-weight: 600;
-  }
+    & > :first-child {
+      color: #000;
+      font-weight: 600;
+    }
 
-  &__filterLeftSide > :first-child::after {
-    content: url("../img/filter_icon2.svg");
-    margin-left: 15px;
-  }
+    & > :first-child::after {
+      content: url("../img/filter_icon2.svg");
+      margin-left: 15px;
+    }
 
-  &__menuFilter > :first-child::after {
-    content: url("../img/filter_icon2.svg");
-    margin-left: 15px;
-  }
-
-  //&__filterLeftSide[open] summary {
-  //  color: $exclusiveColor;
-  //}
-  //
-  //&__filterLeftSide[open] summary::after {
-  //  color: $exclusiveColor;
-  //}
-
-  &__filterLeftSide {
     .catalog__detailsBox {
-      h1 {
+      #filterButton {
         color: $exclusiveColor;
+        font-weight: 600;
       }
 
       background-color: #FFF;
@@ -78,6 +68,14 @@
       details[open] summary {
         color: $exclusiveColor;
       }
+    }
+  }
+
+  &__menuFilter > :first-child svg {
+    margin-left: 15px;
+
+    path {
+      fill: $exclusiveColor;
     }
   }
 
@@ -105,10 +103,6 @@
     }
   }
 
-  details {
-    position: relative;
-  }
-
   &__filterRightSide {
     width: 110px;
   }
@@ -118,26 +112,8 @@
   }
 
   &__pages {
-    margin: auto;
-    height: 44px;
-    border: 1px solid rgb(235, 235, 235);
     margin-top: 48px;
     margin-bottom: 96px;
-    #display: inline-block;
-    @include flexCenter();
-    width: 240px;
-    gap: 15px;
-    @include fontStyle1(400);
-    font-size: 16px;
-    color: #C4C4C4;
-
-    a {
-      color: #C4C4C4;
-    }
-  }
-
-  &__leftButton, &__rightButton {
-    cursor: pointer;
   }
 
   &__detailsBox {
@@ -161,5 +137,27 @@
     padding: 10px;
     border-bottom: 1px solid #EBEBEB;
     width: 100%;
+  }
+}
+
+.pagination {
+  &__leftButton, &__rightButton {
+    cursor: pointer;
+  }
+
+  margin-left: auto;
+  margin-right: auto;
+  height: 44px;
+  border: 1px solid rgb(235, 235, 235);
+  #display: inline-block;
+  @include flexCenter();
+  width: 240px;
+  gap: 15px;
+  @include fontStyle1(400);
+  font-size: 16px;
+  color: #C4C4C4;
+
+  a {
+    color: #C4C4C4;
   }
 }
