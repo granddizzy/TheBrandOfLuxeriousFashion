@@ -2,12 +2,16 @@
 @import "mixins";
 
 .productSlider {
+  background-color: rgb(247, 247, 247);
+  border-width: 2px 0 2px;
+  border-style: solid;
+  border-color: rgb(234, 234, 234);
+
   .bigContainer {
     background-color: rgb(247, 247, 247);
     height: 777px;
     @include flexCenter();
     justify-content: space-between;
-    border: 2px solid rgb(234, 234, 234);
   }
 
   &__button {
@@ -32,6 +36,7 @@
 
   .carousel-item {
     transition: opacity 1s !important;
+
     img {
       height: 777px;
       padding-bottom: 60px;
