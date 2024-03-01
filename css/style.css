@@ -585,4 +585,38 @@ img {
   .pagination a {
     color: #C4C4C4; }
 
+.shoppingCart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 400; }
+  .shoppingCart__rightSide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column; }
+  .shoppingCart__shippingAdress {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column; }
+    .shoppingCart__shippingAdress form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      flex-direction: column; }
+  .shoppingCart__total {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column; }
+
 /*# sourceMappingURL=style.css.map */

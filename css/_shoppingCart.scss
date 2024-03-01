@@ -1,0 +1,27 @@
+@import "vars";
+@import "mixins";
+
+.shoppingCart {
+  @include flexCenter();
+  @include fontStyle1(400);
+
+  &__rightSide {
+    @include flexCenter();
+    flex-direction: column;
+  }
+
+  &__shippingAdress {
+    @include flexCenter();
+    flex-direction: column;
+
+    form {
+      @include flexCenter();
+      flex-direction: column;
+    }
+  }
+
+  &__total {
+    @include flexCenter();
+    flex-direction: column;
+  }
+}
