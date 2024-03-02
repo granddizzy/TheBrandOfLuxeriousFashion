@@ -7,6 +7,7 @@
   margin-top: 100px;
   margin-bottom: 100px;
   justify-content: space-between;
+  align-items: flex-start;
 
   &__leftSide {
     @include flexCenter();
@@ -17,15 +18,44 @@
   &__rightSide {
     @include flexCenter();
     flex-direction: column;
+    align-items: flex-start;
+    width: 360px;
   }
 
   &__shippingAdress {
     @include flexCenter();
     flex-direction: column;
+    align-items: flex-start;
+
+    width: 100%;
+
+
 
     form {
       @include flexCenter();
       flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+
+      width: 100%;
+
+      h1 {
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+      }
+
+      label {
+        width: 100%;
+      }
+
+      input {
+        font-size: 13px;
+        color: #B1B1B1;
+        padding: 15px;
+        width: 100%;
+        border: 1px solid #A4A4A4;
+      }
     }
   }
 
@@ -91,11 +121,14 @@
   }
 
   &__button {
-    width: 235px;
     padding: 15px;
     background-color: #FFF;
     border: 1px solid #A4A4A4;
     color: #000;
+  }
+
+  &__button_leftSife {
+    width: 235px;
   }
 }
 
