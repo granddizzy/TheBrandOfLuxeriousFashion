@@ -4,6 +4,15 @@
 .shoppingCart {
   @include flexCenter();
   @include fontStyle1(400);
+  margin-top: 100px;
+  margin-bottom: 100px;
+  justify-content: space-between;
+
+  &__leftSide {
+    @include flexCenter();
+    flex-direction: column;
+    gap: 30px;
+  }
 
   &__rightSide {
     @include flexCenter();
@@ -23,5 +32,56 @@
   &__total {
     @include flexCenter();
     flex-direction: column;
+
+  }
+
+  .shoppingItem {
+    width: 652px;
+    position: relative;
+
+    &__rightSideContent {
+      width: 200px;
+      margin-top: 20px;
+      color: #656565;
+
+      h1 {
+        font-size: 24px;
+        margin-bottom: 40px;
+        color: #222222;
+      }
+
+      p {
+        margin: 5px 0;
+        font-size: 22px;
+      }
+    }
+
+    &__price {
+      color: $exclusiveColor;
+    }
+
+    &__quantity {
+      width: 50px;
+      text-align: center;
+      margin-left: 30px;
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+      border: 1px solid rgb(234, 234, 234);
+    }
+
+    &__wrap {
+      box-shadow: 17px 19px 24px 0 rgba(0, 0, 0, 0.13);
+      @include flexCenter();
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    &__crossButton {
+      position: absolute;
+      top:25px;
+      right: 20px;
+      cursor: pointer;
+    }
   }
 }
+
