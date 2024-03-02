@@ -664,5 +664,19 @@ img {
       top: 25px;
       right: 20px;
       cursor: pointer; }
+  .shoppingCart__buttons {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    justify-content: space-between; }
+  .shoppingCart__button {
+    width: 235px;
+    padding: 15px;
+    background-color: #FFF;
+    border: 1px solid #A4A4A4;
+    color: #000; }
 
 /*# sourceMappingURL=style.css.map */
