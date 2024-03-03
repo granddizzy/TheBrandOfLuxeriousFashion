@@ -17,7 +17,7 @@ img {
   display: block; }
 
 .container {
-  max-width: 1140px;
+  max-width: 1140px !important;
   margin: 0 auto; }
 
 .bigContainer {
@@ -730,5 +730,104 @@ img {
     color: #4A4A4A;
     padding-top: 10px;
     padding-bottom: 10px; }
+
+.registration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 400;
+  margin-top: 80px;
+  margin-bottom: 100px; }
+  .registration__leftSide {
+    max-width: 359px; }
+  .registration__rightSide {
+    max-width: 652px;
+    font-size: 24px; }
+    .registration__rightSide ul {
+      margin: 0;
+      padding: 0; }
+    .registration__rightSide li {
+      padding-bottom: 10px; }
+    .registration__rightSide li:before {
+      content: url("../img/checkmark.svg");
+      margin-right: 20px; }
+
+.regForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  font-size: 16px;
+  color: #222222;
+  width: 100%; }
+  .regForm label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%; }
+  .regForm input {
+    width: 100%;
+    padding: 15px;
+    font-size: 13px;
+    color: #B1B1B1;
+    border: 1px solid #B1B1B1; }
+  .regForm input::placeholder {
+    color: #B1B1B1; }
+  .regForm__genders {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start !important;
+    flex-direction: row !important;
+    gap: 20px !important;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px; }
+    .regForm__genders label {
+      display: block;
+      text-align: left;
+      white-space: nowrap;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      flex-direction: row;
+      justify-content: flex-start;
+      width: auto;
+      gap: 15px; }
+      .regForm__genders label input {
+        width: 20px; }
+  .regForm p {
+    margin: 0;
+    padding: 0; }
+  .regForm__attention {
+    font-size: 13px;
+    color: #B1B1B1; }
+  .regForm button {
+    padding: 15px 25px;
+    background-color: #F16D7F;
+    border: none;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+    margin-top: 30px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -19,7 +19,7 @@ img {
 @import "vars";
 
 .container {
-  max-width: $containerWidth;
+  max-width: $containerWidth !important;
   margin: 0 auto;
 }
 

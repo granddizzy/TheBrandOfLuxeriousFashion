@@ -1,0 +1,111 @@
+@import "vars";
+@import "mixins";
+
+.registration {
+  @include flexCenter();
+  justify-content: space-between;
+  align-items: flex-start;
+  @include fontStyle1(400);
+  margin-top: 80px;
+  margin-bottom: 100px;
+
+  &__leftSide {
+    max-width: 359px;
+  }
+
+  &__rightSide {
+    max-width: 652px;
+    font-size: 24px;
+
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      padding-bottom: 10px;
+    }
+
+    li:before {
+      content: url("../img/checkmark.svg");
+      margin-right: 20px;
+    }
+  }
+}
+
+.regForm {
+  @include flexCenter();
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  font-size: 16px;
+  color: #222222;
+  width: 100%;
+
+  label {
+    @include flexCenter();
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+  }
+
+  input {
+    width: 100%;
+    padding: 15px;
+    font-size: 13px;
+    color: #B1B1B1;
+    border: 1px solid #B1B1B1;
+  }
+
+  input::placeholder {
+    color: #B1B1B1;
+  }
+
+  &__genders {
+    @include flexCenter();
+    justify-content: flex-start !important;
+    flex-direction: row !important;
+    gap: 20px !important;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    label {
+      display: block;
+      text-align: left;
+      white-space: nowrap;
+      @include flexCenter();
+      flex-direction: row;
+      justify-content: flex-start;
+
+      input {
+        width: 20px;
+      }
+
+      width: auto;
+      gap: 15px;
+    }
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__attention {
+    font-size: 13px;
+    color: #B1B1B1;
+  }
+
+  button {
+    padding: 15px 25px;
+    background-color: $exclusiveColor;
+    border: none;
+    color: #FFF;
+    @include flexCenter();
+    gap: 20px;
+    margin-top: 30px;
+  }
+}
