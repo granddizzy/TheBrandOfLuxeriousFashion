@@ -749,11 +749,16 @@ img {
   .registration__rightSide {
     max-width: 652px;
     font-size: 24px; }
+    .registration__rightSide h1 {
+      font-size: 24px;
+      margin-bottom: 25px; }
+    .registration__rightSide p {
+      margin-bottom: 25px; }
     .registration__rightSide ul {
       margin: 0;
       padding: 0; }
     .registration__rightSide li {
-      padding-bottom: 10px; }
+      padding-bottom: 15px; }
     .registration__rightSide li:before {
       content: url("../img/checkmark.svg");
       margin-right: 20px; }
