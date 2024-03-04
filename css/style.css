@@ -643,6 +643,8 @@ img {
         padding: 15px;
         width: 100%;
         border: 1px solid #A4A4A4; }
+      .shoppingCart__shippingAdress form input:focus {
+        outline: none; }
       .shoppingCart__shippingAdress form input::placeholder {
         color: #B1B1B1; }
   .shoppingCart__total {
@@ -699,13 +701,16 @@ img {
         align-items: center;
         align-content: center;
         justify-content: flex-start; }
+      .shoppingCart .shoppingItem__rightSideContent input:focus {
+        outline: none; }
     .shoppingCart .shoppingItem__price {
       color: #F16D7F; }
+    .shoppingCart .shoppingItem__data {
+      color: #6F6E6E; }
     .shoppingCart .shoppingItem__quantity {
       width: 50px;
       text-align: center;
       margin-left: 30px;
-      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
       border: 1px solid #eaeaea;
       font-size: 18px; }
     .shoppingCart .shoppingItem__wrap {
