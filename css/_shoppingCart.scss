@@ -81,6 +81,7 @@
 
     &__grandtotal {
       font-size: 16px;
+      margin-top: 15px;
     }
 
     &__subPrice {
@@ -96,9 +97,6 @@
     &__button {
       width: 100%;
       padding: 20px;
-      background-color: $exclusiveColor;
-      border: none;
-      color: #FFF;
       margin-top: 20px;
     }
 
@@ -177,6 +175,13 @@
     background-color: #FFF;
     border: 1px solid #A4A4A4;
     color: #000;
+    cursor: pointer;
+  }
+
+  &__button:hover {
+    background-color: $exclusiveColor;
+    border-color: $exclusiveColor;
+    color: #FFF;
   }
 
   &__button_leftSife {

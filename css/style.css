@@ -662,7 +662,8 @@ img {
     .shoppingCart .total__subtotal {
       font-size: 11px; }
     .shoppingCart .total__grandtotal {
-      font-size: 16px; }
+      font-size: 16px;
+      margin-top: 15px; }
     .shoppingCart .total__subPrice {
       margin-left: 20px; }
     .shoppingCart .total__grandPrice {
@@ -672,9 +673,6 @@ img {
     .shoppingCart .total__button {
       width: 100%;
       padding: 20px;
-      background-color: #F16D7F;
-      border: none;
-      color: #FFF;
       margin-top: 20px; }
     .shoppingCart .total__line {
       height: 1px;
@@ -736,7 +734,12 @@ img {
     padding: 15px;
     background-color: #FFF;
     border: 1px solid #A4A4A4;
-    color: #000; }
+    color: #000;
+    cursor: pointer; }
+  .shoppingCart__button:hover {
+    background-color: #F16D7F;
+    border-color: #F16D7F;
+    color: #FFF; }
   .shoppingCart__button_leftSife {
     width: 235px; }
   .shoppingCart__button_address {
