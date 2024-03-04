@@ -187,12 +187,14 @@
     border: 1px solid #A4A4A4;
     color: #000;
     cursor: pointer;
+    transition: background-color 0.5s ease;
   }
 
   &__button:hover {
     background-color: $exclusiveColor;
     border-color: $exclusiveColor;
     color: #FFF;
+    transition: background-color 0.5s ease;
   }
 
   &__button_leftSife {
