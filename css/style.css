@@ -780,7 +780,8 @@ img {
       margin-bottom: 25px; }
     .registration__rightSide ul {
       margin: 0;
-      padding: 0; }
+      padding: 0;
+      list-style-type: none; }
     .registration__rightSide li {
       padding-bottom: 15px; }
     .registration__rightSide li:before {
