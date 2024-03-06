@@ -20,21 +20,18 @@
 
   &__texts {
     color: #222;
-    @include fontStyle1(900);
-    font-size: 48px;
+    @include fontStyle1(900, 48px);
     border-left: 12px solid $exclusiveColor;
     padding-left: 16px;
   }
 
   &__text1 {
     color: #222;
-    @include fontStyle1(700);
-    font-size: 32px;
+    @include fontStyle1(700, 32px);
   }
 
   &__text2 {
     color: $exclusiveColor;
-    @include fontStyle1(700);
-    font-size: 32px;
+    @include fontStyle1(700, 32px);
   }
 }

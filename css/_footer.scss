@@ -36,8 +36,7 @@
     margin-top: 30px;
     color: #222224;
     text-align: center;
-    @include fontStyle1(400);
-    font-size: 20px;
+    @include fontStyle1(400, 20px);
     min-height: 99px;
   }
 
@@ -53,8 +52,7 @@
     max-width: 557px;
     color: #222224;
     text-align: center;
-    @include fontStyle1(700);
-    font-size: 24px;
+    @include fontStyle1(700, 24px);
     line-height: 167.2%; /* 40.128px */
   }
 
@@ -78,8 +76,7 @@
     padding-left: 22px;
     padding-right: 22px;
     color: #222224;
-    @include fontStyle1(400);
-    font-size: 14px;
+    @include fontStyle1(400, 14px);
     outline: none;
   }
 
@@ -92,8 +89,7 @@
     min-width: 100px;
     color: #FFF;
     text-align: center;
-    @include fontStyle1(400);
-    font-size: 14px;
+    @include fontStyle1(400, 14px);
     cursor: pointer;
   }
 
@@ -137,8 +133,7 @@
     &__copyright {
       max-width: 332px;
       color: #FBFBFB;
-      @include fontStyle1(400);
-      font-size: 16px;
+      @include fontStyle1(400, 16px);
     }
   }
 }

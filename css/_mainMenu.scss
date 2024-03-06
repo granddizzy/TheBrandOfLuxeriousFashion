@@ -1,14 +1,13 @@
+@import "vars";
+@import "mixins";
+
 .mainMenu {
   position: absolute;
   top: 0;
   right: 0;
   max-width: 232px;
   background-color: #FFF;
-  font-family: Lato, sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  @include fontStyle1(400, 14px);
   width: 232px;
   filter: drop-shadow(6px 4px 35px rgba(0, 0, 0, 0.21));
   padding: 32px 33px 21px 33px;

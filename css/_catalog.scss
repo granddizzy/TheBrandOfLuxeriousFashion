@@ -4,8 +4,7 @@
 .catalog {
   &__filter {
     color: #6F6E6E;
-    font-size: 14px;
-    @include fontStyle1(400);
+    @include fontStyle1(400, 14px);
     @include flexCenter();
     justify-content: space-between;
 
@@ -35,7 +34,7 @@
       gap: 20px;
       padding: 20px;
       color: #6F6E6E;
-      @include fontStyle1(400);
+      @include fontStyle1(400, 14px);
 
       a {
         color: #6F6E6E;
@@ -107,7 +106,7 @@
     width: 110px;
   }
 
-  .feturedItems___items {
+  .catalogItems___items {
     padding-top: 0;
   }
 
@@ -149,12 +148,10 @@
   margin-right: auto;
   height: 44px;
   border: 1px solid rgb(235, 235, 235);
-  #display: inline-block;
   @include flexCenter();
   width: 240px;
   gap: 15px;
-  @include fontStyle1(400);
-  font-size: 16px;
+  @include fontStyle1(400, 16px);
   color: #C4C4C4;
 
   a {

@@ -1,3 +1,6 @@
+@import "vars";
+@import "mixins";
+
 .storeSections {
   display: grid;
   align-content: center;
@@ -53,14 +56,12 @@
   &__text1 {
     color: #FFF;
     text-align: center;
-    @include fontStyle1(400);
-    font-size: 16px;
+    @include fontStyle1(400, 16px);
   }
 
   &__text2 {
     color: $exclusiveColor;
-    @include fontStyle1(700);
-    font-size: 24px;
+    @include fontStyle1(700, 24px);
     text-align: center;
   }
 }

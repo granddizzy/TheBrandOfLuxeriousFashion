@@ -5,7 +5,7 @@
   @include flexCenter();
   justify-content: space-between;
   align-items: flex-start;
-  @include fontStyle1(400);
+  @include fontStyle1(400, 24px);
   margin-top: 80px;
   margin-bottom: 100px;
 

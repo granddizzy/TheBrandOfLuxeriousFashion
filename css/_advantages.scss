@@ -23,13 +23,11 @@
   &__item h2 {
     margin-top: 28px;
     margin-bottom: 16px;
-    @include fontStyle1(400);
-    font-size: 19.96px;
+    @include fontStyle1(400, 20px);
   }
 
   &__item p {
     text-align: center;
-    @include fontStyle1(300);
-    font-size: 13.972px;
+    @include fontStyle1(300, 14px);
   }
 }
