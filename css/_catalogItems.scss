@@ -110,3 +110,19 @@
     color: #FFF;
   }
 }
+
+@media (max-width: 770px) and (min-width: 376px) {
+  .catalogItems {
+    margin-right: 16px;
+    margin-left: 16px;
+    margin-top: 109px;
+  }
+}
+
+@media (max-width: 375px) {
+  .catalogItems {
+    margin-right: 8px;
+    margin-left: 8px;
+    margin-top: 64px;
+  }
+}

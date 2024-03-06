@@ -35,3 +35,50 @@
     @include fontStyle1(700, 32px);
   }
 }
+
+@media (max-width: 1145px) and (min-width: 715px) {
+  .banner {
+    .bigCcontainer {
+      justify-content: center;
+    }
+
+    .biGcontainer img {
+      max-height: 386px;
+    }
+
+    &__rightSide {
+      min-width: 386px;
+      padding-left: 39px;
+    }
+
+    .brandTexts {
+      font-size: 44px;
+    }
+
+    .brand_text1 {
+      font-size: 24px;
+    }
+
+    .brand_text2 {
+      font-size: 24px;
+    }
+  }
+}
+
+@media (max-width: 714px) {
+  .banner {
+    .biGcontainer {
+      justify-content: center;
+      min-height: 364px;
+    }
+
+    .biGcontainer img {
+      display: none;
+    }
+
+    &__rightSide {
+      min-width: 0;
+      padding: 0;
+    }
+  }
+}

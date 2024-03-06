@@ -22,6 +22,10 @@ img {
   max-width: 1600px;
   margin: 0 auto; }
 
+@media (max-width: 1172px) {
+  .container {
+    margin-left: 16px;
+    margin-right: 16px; } }
 .navigation {
   background-color: #222;
   margin: 0 auto; }
@@ -75,6 +79,10 @@ img {
     justify-content: center;
     align-items: center; }
 
+@media (max-width: 1213px) {
+  .navigation .container {
+    margin-left: 32px;
+    margin-right: 41px; } }
 .banner {
   background-color: #F1E4E6; }
   .banner .bigContainer {
@@ -114,6 +122,29 @@ img {
     font-weight: 700;
     font-size: 32px; }
 
+@media (max-width: 1145px) and (min-width: 715px) {
+  .banner .bigCcontainer {
+    justify-content: center; }
+  .banner .biGcontainer img {
+    max-height: 386px; }
+  .banner__rightSide {
+    min-width: 386px;
+    padding-left: 39px; }
+  .banner .brandTexts {
+    font-size: 44px; }
+  .banner .brand_text1 {
+    font-size: 24px; }
+  .banner .brand_text2 {
+    font-size: 24px; } }
+@media (max-width: 714px) {
+  .banner .biGcontainer {
+    justify-content: center;
+    min-height: 364px; }
+  .banner .biGcontainer img {
+    display: none; }
+  .banner__rightSide {
+    min-width: 0;
+    padding: 0; } }
 .mainMenu {
   position: absolute;
   top: 0;
@@ -201,6 +232,12 @@ img {
     font-size: 24px;
     text-align: center; }
 
+@media (max-width: 770px) and (min-width: 376px) {
+  .storeSections {
+    gap: 20px; } }
+@media (max-width: 375px) {
+  .storeSections {
+    grid-template-columns: 1fr; } }
 .catalogItems {
   margin-top: 96px; }
   .catalogItems h1 {
@@ -308,6 +345,16 @@ img {
     background-color: #F16D7F;
     color: #FFF; }
 
+@media (max-width: 770px) and (min-width: 376px) {
+  .catalogItems {
+    margin-right: 16px;
+    margin-left: 16px;
+    margin-top: 109px; } }
+@media (max-width: 375px) {
+  .catalogItems {
+    margin-right: 8px;
+    margin-left: 8px;
+    margin-top: 64px; } }
 .advantages {
   background-color: #222224;
   padding-top: 104px;
@@ -478,6 +525,24 @@ img {
     font-weight: 400;
     font-size: 16px; }
 
+@media (max-width: 950px) {
+  .footer__content .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 48px; }
+  .footer__rightSide {
+    min-width: 0; } }
+@media (max-width: 770px) {
+  .footer__container {
+    background-image: url("../img/footerBackground2.png"); }
+  .footer__content {
+    padding-top: 64px;
+    padding-bottom: 140px; } }
+@media (max-width: 375px) {
+  .footer__email input {
+    min-width: 0; }
+  .footer__container {
+    background-image: url("../img/footerBackground3.png"); } }
 .productSlider {
   background-color: #f7f7f7;
   border-width: 2px 0 2px;

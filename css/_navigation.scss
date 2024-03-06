@@ -62,3 +62,10 @@
     align-items: center;
   }
 }
+
+@media (max-width: 1213px) {
+  .navigation .container {
+    margin-left: 32px;
+    margin-right: 41px;
+  }
+}
