@@ -18,16 +18,27 @@
     color: #F8F8F8;
     @include flexCenter();
     flex-direction: column;
-  }
 
-  &__item h2 {
-    margin-top: 28px;
-    margin-bottom: 16px;
-    @include fontStyle1(400, 20px);
-  }
+    h2 {
+      margin-top: 28px;
+      margin-bottom: 16px;
+      @include fontStyle1(400, 20px);
+    }
 
-  &__item p {
-    text-align: center;
-    @include fontStyle1(300, 14px);
+    p {
+      text-align: center;
+      @include fontStyle1(300, 14px);
+    }
+  }
+}
+
+@media (max-width: 770px) {
+  .advantages {
+    padding-top: 64px;
+    padding-bottom: 64px;
+
+    &__items {
+      flex-direction: column;
+    }
   }
 }
