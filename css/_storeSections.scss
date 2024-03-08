@@ -8,7 +8,7 @@
   align-items: center;
   justify-items: stretch;
   grid-template-columns: 1fr 1fr 1fr;
-  padding-top: 65px;
+  margin-top: 65px;
   gap: 30px;
 
   &__item {
@@ -68,6 +68,7 @@
 
 @media (max-width: 770px) and (min-width: 376px) {
   .storeSections {
+    margin-top: 35px;
     gap: 20px;
   }
 }
