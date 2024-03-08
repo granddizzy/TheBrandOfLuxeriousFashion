@@ -31,22 +31,27 @@ img {
   margin: 0 auto; }
   .navigation .container {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     justify-content: space-between;
     align-items: center;
     padding-top: 18px;
     padding-bottom: 18px; }
   .navigation__leftSide {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: center;
     gap: 41px; }
   .navigation__rightSide {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: center;
@@ -83,6 +88,9 @@ img {
   .navigation .container {
     margin-left: 32px;
     margin-right: 41px; } }
+@media (max-width: 375px) {
+  .navigation .buttonProfile, .navigation .buttonBasket, .navigation .basketCounter {
+    display: none; } }
 .banner {
   background-color: #F1E4E6; }
   .banner .bigContainer {
@@ -125,26 +133,37 @@ img {
 @media (max-width: 1145px) and (min-width: 715px) {
   .banner .bigCcontainer {
     justify-content: center; }
-  .banner .biGcontainer img {
-    max-height: 386px; }
+  .banner__leftSide {
+    height: 386px; }
   .banner__rightSide {
     min-width: 386px;
     padding-left: 39px; }
-  .banner .brandTexts {
+  .banner__texts {
     font-size: 44px; }
-  .banner .brand_text1 {
+  .banner__text1 {
     font-size: 24px; }
-  .banner .brand_text2 {
+  .banner__text2 {
     font-size: 24px; } }
 @media (max-width: 714px) {
   .banner .biGcontainer {
     justify-content: center;
     min-height: 364px; }
-  .banner .biGcontainer img {
+  .banner__leftSide {
     display: none; }
   .banner__rightSide {
     min-width: 0;
-    padding: 0; } }
+    padding: 0;
+    height: 386px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center; }
+  .banner__texts {
+    font-size: 38px; }
+  .banner__text1 {
+    font-size: 20px; }
+  .banner__text2 {
+    font-size: 20px; } }
 .mainMenu {
   position: absolute;
   top: 0;

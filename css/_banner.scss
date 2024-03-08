@@ -42,8 +42,8 @@
       justify-content: center;
     }
 
-    .biGcontainer img {
-      max-height: 386px;
+    &__leftSide {
+      height: 386px;
     }
 
     &__rightSide {
@@ -51,15 +51,15 @@
       padding-left: 39px;
     }
 
-    .brandTexts {
+    &__texts {
       font-size: 44px;
     }
 
-    .brand_text1 {
+    &__text1 {
       font-size: 24px;
     }
 
-    .brand_text2 {
+    &__text2 {
       font-size: 24px;
     }
   }
@@ -72,13 +72,27 @@
       min-height: 364px;
     }
 
-    .biGcontainer img {
+    &__leftSide {
       display: none;
     }
 
     &__rightSide {
       min-width: 0;
       padding: 0;
+      height: 386px;
+      @include flexCenter();
+    }
+
+    &__texts {
+      font-size: 38px;
+    }
+
+    &__text1 {
+      font-size: 20px;
+    }
+
+    &__text2 {
+      font-size: 20px;
     }
   }
 }
