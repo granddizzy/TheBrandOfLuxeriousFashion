@@ -252,7 +252,7 @@ img {
 
 @media (max-width: 770px) and (min-width: 376px) {
   .storeSections {
-    margin-top: 35px;
+    margin-top: 20px;
     gap: 20px; } }
 @media (max-width: 375px) {
   .storeSections {
@@ -340,8 +340,6 @@ img {
         font-weight: 400;
         font-size: 16px; }
       .catalogItems__items .catalogItem__fill {
-        display: none; }
-      .catalogItems__items .catalogItem:hover .catalogItem__fill {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -351,7 +349,12 @@ img {
         position: absolute;
         top: 0;
         left: 0;
-        background-color: rgba(58, 56, 56, 0.86); }
+        background-color: rgba(58, 56, 56, 0.86);
+        opacity: 0;
+        transition: opacity 0.5s ease; }
+      .catalogItems__items .catalogItem:hover .catalogItem__fill {
+        opacity: 1;
+        transition: opacity 0.5s ease; }
   .catalogItems .buttons {
     display: flex;
     justify-content: center;
@@ -368,10 +371,12 @@ img {
     padding: 15px 39px 14px 39px;
     background-color: #FFF;
     border: 1px solid #F25822;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: background-color 0.5s ease; }
   .catalogItems__allButton:hover {
     background-color: #F16D7F;
-    color: #FFF; }
+    color: #FFF;
+    transition: background-color 0.5s ease; }
 
 @media (max-width: 770px) and (min-width: 376px) {
   .catalogItems {

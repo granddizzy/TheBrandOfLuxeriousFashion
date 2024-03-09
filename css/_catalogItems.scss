@@ -74,18 +74,21 @@
       }
 
       &__fill {
-        display: none;
+        @include flexCenter();
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(58, 56, 56, 0.86);
+        opacity: 0;
+        transition: opacity 0.5s ease;
       }
 
       &:hover {
         .catalogItem__fill {
-          @include flexCenter();
-          width: 100%;
-          height: 100%;
-          position: absolute;
-          top: 0;
-          left: 0;
-          background-color: rgba(58, 56, 56, 0.86);
+          opacity: 1;
+          transition: opacity 0.5s ease;
         }
       }
     }
@@ -103,11 +106,13 @@
     background-color: #FFF;
     border: 1px solid #F25822;
     cursor: pointer;
+    transition: background-color 0.5s ease;
   }
 
   &__allButton:hover {
     background-color: $exclusiveColor;
     color: #FFF;
+    transition: background-color 0.5s ease;
   }
 
 }
