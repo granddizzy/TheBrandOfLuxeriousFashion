@@ -51,6 +51,10 @@
         justify-content: space-evenly;
         color: #FFF;
         @include fontStyle1(400, 14px);
+
+        p {
+          margin: 0;
+        }
       }
 
       &__title {

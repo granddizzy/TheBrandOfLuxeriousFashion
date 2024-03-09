@@ -83,4 +83,23 @@
     border-color: $exclusiveColor;
     width: 212px;
   }
+
+  &__button {
+    cursor: pointer;
+    min-width: 139px;
+    padding-top: 11px;
+    padding-bottom: 8px;
+    @include flexCenter();
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    color: $exclusiveColor;
+    border: 1px solid $exclusiveColor;
+    @include fontStyle1(400, 14px);
+    width: 212px;
+    margin-top: 50px;
+
+    p {
+      margin: 0;
+    }
+  }
 }
