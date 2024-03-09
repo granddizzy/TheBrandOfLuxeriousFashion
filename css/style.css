@@ -1065,10 +1065,12 @@ img {
   margin-top: 80px;
   margin-bottom: 100px; }
   .registration__leftSide {
-    max-width: 359px; }
+    width: 359px;
+    flex-shrink: 0; }
   .registration__rightSide {
     max-width: 652px;
-    font-size: 24px; }
+    font-size: 24px;
+    margin-left: 20px; }
     .registration__rightSide h1 {
       font-size: 24px;
       margin-bottom: 25px; }
@@ -1168,5 +1170,15 @@ img {
     transition: background-color 0.5s ease; }
     .regForm__button:hover svg path {
       fill: #FFF; }
+
+@media (max-width: 950px) {
+  .registration {
+    flex-direction: column;
+    gap: 40px; }
+    .registration__leftSide {
+      width: 100%; }
+    .registration__rightSide {
+      max-width: none;
+      width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
