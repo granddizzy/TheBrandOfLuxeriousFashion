@@ -57,7 +57,8 @@
 
   &__line2 {
     height: 1px;
-    width: 642px;
+    //width: 642px;
+    width: 60%;
     background-color: #EAEAEA;
     margin: 65px 0 65px;
   }
@@ -134,6 +135,28 @@
 
     &__filter {
       width: 100%;
+    }
+
+    &__text {
+      //font-size: 14px;
+      //color: rgb(94, 94, 94);
+      margin-top: 24px;
+      width: 100%;
+      //text-align: center;
+    }
+    //.container {
+    //  padding-left: 10px;
+    //  padding-right: 10px;
+    //}
+
+    &__content {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    &__line2 {
+      //width: 80%;
+      margin: 32px 0;
     }
   }
 }

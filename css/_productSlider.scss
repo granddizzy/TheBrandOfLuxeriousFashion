@@ -44,3 +44,28 @@
   }
 }
 
+@media (max-width: 1140px) {
+  .productSlider {
+    .bigContainer {
+      height: 624px;
+    }
+
+    .carousel-item {
+      transition: opacity 1s !important;
+
+      img {
+        max-height: 624px;
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 570px) {
+
+}
+
+@media (max-width: 375px) {
+
+}
+

@@ -147,10 +147,6 @@
   }
 }
 
-@media (max-width: 1090px) {
-
-}
-
 @media (max-width: 950px) {
   .registration {
     flex-direction: column;
@@ -163,6 +159,19 @@
     &__rightSide {
       max-width: none;
       width: 100%;
+      margin-left: 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .registration {
+    &__rightSide {
+      font-size: 16px;
+
+      h1 {
+        font-size: 16px;
+      }
     }
   }
 }

@@ -23,7 +23,8 @@
             </div>
             <div class="navigation__rightSide">
                 <div class="navigation__button buttonMenu"><img src="./img/menu.png" alt="Menu"></div>
-                <a class="navigation__button buttonProfile"><img src="./img/profile.png" alt="Profile"></a>
+                <a class="navigation__button buttonProfile" href="registration.html"><img src="./img/profile.png"
+                                                                                          alt="Profile"></a>
                 <a href="cart.html" class="navigation__button buttonBasket"><img src="./img/basket.png" alt="Basket">
                     <div class="basketCounter">5</div>
                 </a>
@@ -80,30 +81,31 @@
 <main>
     <nav class="storeSections container">
         <div class="storeSections__item storeItem storeSections__item_forWoman">
-            <a href="#">
+            <a href="catalog.html">
                 <div class="storeItem__fill">
                     <span class="storeItem__text1">30% OFF</span><span class="storeItem__text2">FOR WOMEN</span>
                 </div>
             </a>
         </div>
         <div class="storeSections__item storeItem storeSections__item_forMen">
-            <a href="#">
+            <a href="catalog.html">
                 <div class="storeItem__fill">
                     <span class="storeItem__text1">HOT DEAL</span><span class="storeItem__text2">FOR MEN</span>
                 </div>
             </a>
         </div>
         <div class="storeSections_item storeItem storeSections__item_forKids">
-            <a href="#">
+            <a href="catalog.html">
                 <div class="storeItem__fill">
                     <span class="storeItem__text1">NEW ARRIVALS</span><span class="storeItem__text2">FOR KIDS</span>
                 </div>
             </a>
         </div>
         <div class="storeSections__item storeItem storeSections__item_accesories">
-            <a href="#">
+            <a href="catalog.html">
                 <div class="storeItem__fill">
-                    <span class="storeItem__text1">LUXIROUS & TRENDY</span><span class="storeItem__text2">ACCESORIES</span>
+                    <span class="storeItem__text1">LUXIROUS & TRENDY</span><span
+                        class="storeItem__text2">ACCESORIES</span>
                 </div>
             </a>
         </div>
@@ -222,7 +224,7 @@
             </div>
         </div>
         <div class="feturedItems__buttons">
-            <button class="feturedItems__allButton">Browse All Product</button>
+            <button id="catalogButton" class="feturedItems__allButton">Browse All Product</button>
         </div>
     </section>
     <section class="advantages">
@@ -299,5 +301,10 @@
         </div>
     </div>
 </footer>
+<script>
+    document.getElementById('catalogButton').addEventListener('click', function () {
+        window.location.href = 'catalog.html';
+    });
+</script>
 </body>
 </html>

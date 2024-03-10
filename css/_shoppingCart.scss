@@ -226,6 +226,7 @@
     padding-left: 16px;
     padding-right: 16px;
     width: 100%;
+    gap: 40px;
 
     &__leftSide {
       width: 100%;
@@ -297,12 +298,12 @@
     &__button_leftSife {
       font-size: 12px;
       width: 175px;
-      padding: 7px;
+      padding: 10px 5px;
     }
   }
 
   .container {
-    padding-left: 10px;
-    padding-right: 10px;
+    //padding-left: 10px;
+    //padding-right: 10px;
   }
 }
