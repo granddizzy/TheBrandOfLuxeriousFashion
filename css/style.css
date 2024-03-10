@@ -320,7 +320,8 @@ img {
   .catalogItems .catalogItem {
     background-color: #F8F8F8;
     background-repeat: space;
-    background-position: center; }
+    background-position: center;
+    cursor: pointer; }
     .catalogItems .catalogItem__photo {
       position: relative; }
     .catalogItems .catalogItem__text {

@@ -373,5 +373,12 @@
         document.getElementById("catalog__filterLeftSide").removeAttribute("open");
     });
 </script>
+<script>
+    document.querySelectorAll('.catalogItem').forEach(div => {
+        div.addEventListener('click', function() {
+            window.location.href = 'product.html';
+        });
+    });
+</script>
 </body>
 </html>

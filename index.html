@@ -305,6 +305,11 @@
     document.getElementById('catalogButton').addEventListener('click', function () {
         window.location.href = 'catalog.html';
     });
+    document.querySelectorAll('.catalogItem').forEach(div => {
+        div.addEventListener('click', function() {
+            window.location.href = 'product.html';
+        });
+    });
 </script>
 </body>
 </html>
