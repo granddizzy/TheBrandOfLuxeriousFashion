@@ -24,3 +24,13 @@
     color: $exclusiveColor;
   }
 }
+
+@media (max-width: 500px) {
+  .breadсrumbs {
+    .container {
+      flex-direction: column;
+      justify-content: center;
+      gap: 30px;
+    }
+  }
+}

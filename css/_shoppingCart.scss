@@ -115,9 +115,11 @@
   .shoppingItem {
     width: 652px;
     position: relative;
+    height: 306px;
+    min-width: 340px;
 
     &__rightSideContent {
-      width: 200px;
+      max-width: 200px;
       margin-top: 20px;
       color: #656565;
 
@@ -164,6 +166,11 @@
       justify-content: flex-start;
       align-items: flex-start;
       gap: 20px;
+      height: 100%;
+
+      img {
+        max-height: 100%;
+      }
     }
 
     &__crossButton {
@@ -171,6 +178,7 @@
       top: 25px;
       right: 20px;
       cursor: pointer;
+      content: url("../img/cartCrossButton.svg");
     }
   }
 
@@ -179,6 +187,7 @@
     @include flexCenter();
     width: 100%;
     justify-content: space-between;
+    gap: 5px;
   }
 
   &__button {
@@ -248,9 +257,52 @@
     &__shippingAdress {
       width: 100%;
     }
+
     &__rightSide {
       width: 100%;
       flex-direction: column;
     }
+  }
+}
+
+@media (max-width: 570px) {
+  .shoppingCart {
+    .shoppingItem {
+      height: 188px;
+
+      &__rightSideContent {
+        max-width: 140px;
+        //margin-top: 20px;
+        //color: #656565;
+
+        h1 {
+          font-size: 16px;
+          margin-bottom: 20px;
+          //color: #222222;
+        }
+
+        p {
+          margin: 3px 0;
+          font-size: 14px;
+        }
+      }
+
+      &__crossButton {
+        top: 15px;
+        right: 10px;
+        content: url("../img/cartCrossButtonSmall.svg");
+      }
+    }
+
+    &__button_leftSife {
+      font-size: 12px;
+      width: 175px;
+      padding: 7px;
+    }
+  }
+
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }

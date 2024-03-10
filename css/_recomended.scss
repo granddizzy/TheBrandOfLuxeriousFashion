@@ -2,9 +2,26 @@
 @import "mixins";
 
 .recommended {
-  &__items {
-    @include flexCenter();
-    gap: 30px;
+  margin: 120px 0 128px;
+}
+
+@media (max-width: 770px) and (min-width: 375px) {
+  .recommended {
+    .catalogItems > div:nth-child(3) {
+      display: none;
+    }
   }
-  margin: 128px 0 128px;
+}
+
+@media (max-width: 376px) {
+  .recommended {
+    .catalogItems {
+      flex-direction: column;
+      grid-template-columns: 1fr;
+    }
+
+    .catalogItems > div:nth-child(2) {
+      display: none;
+    }
+  }
 }

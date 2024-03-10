@@ -6,14 +6,16 @@
 
   .container {
     position: relative;
-    min-height: 550px;
+    min-height: 600px;
+    padding: 0;
   }
 
   &__content {
     width: 100%;
     position: absolute;
     border: 2px solid rgb(234, 234, 234);
-    padding: 65px;
+    padding-top: 65px;
+    padding-bottom: 65px;
 
     @include flexCenter();
     flex-direction: column;
@@ -63,7 +65,7 @@
   &__filter {
     font-size: 14px;
     color: rgb(111, 110, 110);
-    width: 50%;
+    width: 570px;
     @include flexCenter();
     justify-content: space-evenly;
   }
@@ -97,9 +99,54 @@
     @include fontStyle1(400, 14px);
     width: 212px;
     margin-top: 50px;
+    transition: background-color 0.5s ease;
 
     p {
       margin: 0;
+    }
+  }
+
+  &__button:hover {
+    background-color: $exclusiveColor;
+    transition: background-color 0.5s ease;
+    color: #FFF;
+
+    svg {
+      path {
+        fill: #FFF;
+      }
+    }
+  }
+}
+
+@media (max-width: 1140px) {
+  .productDescription {
+
+    &__content {
+      top: 0;
+      position: relative;
+    }
+  }
+}
+
+@media (max-width: 570px) {
+  .productDescription {
+
+    &__filter {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .productDescription {
+
+    &__filter {
+      font-size: 12px;
+    }
+
+    &__filterItem summary{
+      gap: 5px;
     }
   }
 }

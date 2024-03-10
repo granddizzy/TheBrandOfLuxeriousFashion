@@ -38,8 +38,9 @@
     transition: opacity 1s !important;
 
     img {
-      height: 777px;
+      max-height: 777px;
       padding-bottom: 60px;
     }
   }
 }
+
