@@ -41,7 +41,8 @@ img {
     justify-content: space-between;
     align-items: center;
     padding: 18px 0;
-    width: auto; }
+    width: auto;
+    position: relative; }
   .navigation__leftSide {
     display: flex;
     justify-content: center;
@@ -170,8 +171,8 @@ img {
     font-size: 20px; } }
 .mainMenu {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 74px;
+  right: -232px;
   max-width: 232px;
   background-color: #FFF;
   font-family: Lato, sans-serif;
@@ -182,6 +183,7 @@ img {
   width: 232px;
   filter: drop-shadow(6px 4px 35px rgba(0, 0, 0, 0.21));
   padding: 32px 33px 21px 33px;
+  z-index: 3;
   visibility: hidden;
   opacity: 0;
   transition: visibility 0.3s linear, opacity 0.3s linear; }
@@ -200,6 +202,9 @@ img {
     visibility: visible;
     opacity: 1; }
 
+@media (max-width: 1600px) {
+  .mainMenu {
+    right: -41px; } }
 .storeSections {
   display: grid;
   align-content: center;
