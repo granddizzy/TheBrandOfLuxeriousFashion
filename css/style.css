@@ -976,7 +976,19 @@ img {
     cursor: pointer; }
   .pagination a {
     color: #C4C4C4; }
+  .pagination__active {
+    color: #F16D7F !important; }
 
+@media (max-width: 769px) {
+  .catalog__filterRightSide {
+    display: none; } }
+@media (max-width: 420px) {
+  .catalog__filterLeftSide > :first-child {
+    content: url("../img/filterIcon3.svg"); }
+  .catalog__filterLeftSide > :first-child::after {
+    display: none; }
+  .catalog__filterCenterSide {
+    font-size: 12px; } }
 .shoppingCart {
   display: flex;
   justify-content: center;

@@ -157,4 +157,36 @@
   a {
     color: #C4C4C4;
   }
+
+  &__active {
+    color: $exclusiveColor !important;
+  }
+}
+
+@media (max-width: 769px) {
+  .catalog {
+    &__filterRightSide {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .catalog {
+
+    &__filterLeftSide {
+
+      & > :first-child {
+        content: url("../img/filterIcon3.svg");
+      }
+
+      & > :first-child::after {
+        display: none;
+      }
+    }
+
+    &__filterCenterSide {
+      font-size: 12px;
+    }
+  }
 }
