@@ -889,6 +889,8 @@ img {
       font-weight: 600; }
     .catalog__sectionFilterLeftSide .catalog__detailsBox details[open] summary {
       color: #F16D7F; }
+.catalog__sectionFilterRightSide {
+  width: 110px; }
 .catalog__menuFilter > :first-child svg {
   margin-left: 15px; }
   .catalog__menuFilter > :first-child svg path {
@@ -897,9 +899,14 @@ img {
   width: 80px; }
 .catalog__menuFilter {
   position: absolute;
-  z-index: 3; }
-.catalog__sectionFilterRightSide {
-  width: 110px; }
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  align-items: self-start;
+  gap: 20px; }
 .catalog__pages {
   margin-top: 48px;
   margin-bottom: 96px; }

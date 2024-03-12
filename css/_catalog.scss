@@ -70,16 +70,20 @@
     }
   }
 
+  &__sectionFilterCenterSide {
+
+  }
+
+  &__sectionFilterRightSide {
+    width: 110px;
+  }
+
   &__menuFilter > :first-child svg {
     margin-left: 15px;
 
     path {
       fill: $exclusiveColor;
     }
-  }
-
-  &__sectionFilterCenterSide {
-
   }
 
   .filter {
@@ -91,10 +95,10 @@
   &__menuFilter {
     position: absolute;
     z-index: 3;
-  }
-
-  &__sectionFilterRightSide {
-    width: 110px;
+    @include flexCenter();
+    flex-direction: column;
+    align-items: self-start;
+    gap: 20px;
   }
 
   &__pages {
