@@ -190,14 +190,23 @@ img {
   .mainMenu h3 {
     color: #000;
     font-weight: 700;
-    margin-bottom: 13px; }
+    margin-bottom: 13px;
+    font-size: 14px; }
   .mainMenu__firstLevel a {
     color: #F16D7F; }
   .mainMenu__secondLevel a {
     padding-left: 27px;
     color: #6F6E6E; }
+  .mainMenu ul {
+    padding: 0;
+    margin: 0; }
   .mainMenu li {
     padding-top: 11px; }
+  .mainMenu a {
+    text-decoration: none; }
+  .mainMenu p {
+    padding: 0;
+    margin: 0; }
   .mainMenu.active {
     visibility: visible;
     opacity: 1; }
@@ -658,7 +667,7 @@ img {
     justify-content: center;
     align-items: center;
     align-content: center;
-    height: 100vh; }
+    height: 777px; }
   .productSlider .carousel-item {
     transition: opacity 1s !important; }
     .productSlider .carousel-item img {
