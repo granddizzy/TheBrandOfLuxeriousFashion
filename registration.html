@@ -12,7 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
     <script src="js/script.js" defer></script>
     <title>Shop</title>
-    <!--    <script src="js/script.js" defer></script>-->
 </head>
 <body>
 <header>
@@ -24,7 +23,8 @@
             </div>
             <div class="navigation__rightSide">
                 <div class="navigation__button buttonMenu"><img src="./img/menu.png" alt="Menu"></div>
-                <a class="navigation__button buttonProfile" href="registration.html"><img src="./img/profile.png" alt="Profile"></a>
+                <a class="navigation__button buttonProfile" href="registration.html"><img src="./img/profile.png"
+                                                                                          alt="Profile"></a>
                 <a href="cart.html" class="navigation__button buttonBasket"><img src="./img/basket.png" alt="Basket">
                     <div class="basketCounter">5</div>
                 </a>
@@ -67,7 +67,7 @@
         </div>
     </nav>
 </header>
-<section class="breadсrumbs">
+<div class="breadсrumbs">
     <div class="container">
         <div class="breadсrumbs__leftSide">
             <p>REGISTRATION</p>
@@ -76,25 +76,25 @@
 
         </div>
     </div>
-</section>
+</div>
 <main>
     <section class="registration container">
         <div class="registration__leftSide">
             <form action="#" method="post" class="regForm">
-                <label>
-                    Your name
-                    <input type="text" placeholder="First name" name="firstname">
-                    <input type="text" placeholder="Last name" name="lastname">
-                </label>
+                <fieldset>
+                    <legend>Your name</legend>
+                    <label><input type="text" placeholder="First name" name="firstname"></label>
+                    <label><input type="text" placeholder="Last name" name="lastname"></label>
+                </fieldset>
                 <div class="regForm__genders">
                     <label><input type="radio" name="gender" value="male">Male</label>
                     <label><input type="radio" name="gender" value="female">Female</label>
                 </div>
-                <label>
-                    Login details
-                    <input type="email" name="email" placeholder="Email">
-                    <input type="password" name="password" placeholder="Password">
-                </label>
+                <fieldset>
+                    <legend>Login details</legend>
+                    <label><input type="email" name="email" placeholder="Email"></label>
+                    <label><input type="password" name="password" placeholder="Password"></label>
+                </fieldset>
                 <p class="regForm__attention">Please use 8 or more characters, with at least 1 number and a mixture of
                     uppercase and lowercase
                     letters</p>
