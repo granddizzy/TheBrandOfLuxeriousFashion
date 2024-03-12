@@ -891,12 +891,6 @@ img {
       color: #F16D7F; }
 .catalog__sectionFilterRightSide {
   width: 110px; }
-.catalog__menuFilter > :first-child svg {
-  margin-left: 15px; }
-  .catalog__menuFilter > :first-child svg path {
-    fill: #F16D7F; }
-.catalog .filter__menuSize, .catalog .filter__menuTrending, .catalog .filter__menuPrice {
-  width: 80px; }
 .catalog__menuFilter {
   position: absolute;
   z-index: 3;
@@ -907,6 +901,14 @@ img {
   flex-direction: column;
   align-items: self-start;
   gap: 20px; }
+  .catalog__menuFilter details {
+    width: 100%; }
+.catalog__menuFilter > :first-child svg {
+  margin-left: 15px; }
+  .catalog__menuFilter > :first-child svg path {
+    fill: #F16D7F; }
+.catalog .filter__menuSize, .catalog .filter__menuTrending, .catalog .filter__menuPrice {
+  width: 80px; }
 .catalog__pages {
   margin-top: 48px;
   margin-bottom: 96px; }
