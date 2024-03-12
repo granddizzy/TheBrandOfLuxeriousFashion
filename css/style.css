@@ -896,7 +896,7 @@ img {
   width: 110px; }
 .catalog__menuFilter {
   position: absolute;
-  z-index: 3;
+  z-index: 4;
   display: flex;
   justify-content: center;
   align-items: center;
