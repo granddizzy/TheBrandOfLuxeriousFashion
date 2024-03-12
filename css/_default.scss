@@ -11,6 +11,10 @@ body {
   scroll-behavior: smooth;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 img {
   max-width: 100%;
   display: block;
