@@ -2,7 +2,7 @@
 @import "mixins";
 
 .catalog {
-  &__filter {
+  &__sectionFilter {
     color: #6F6E6E;
     @include fontStyle1(400, 14px);
     @include flexCenter();
@@ -19,7 +19,7 @@
     }
   }
 
-  &__filterLeftSide {
+  &__sectionFilterLeftSide {
     color: #6F6E6E;
 
     summary {
@@ -78,7 +78,7 @@
     }
   }
 
-  &__filterCenterSide {
+  &__sectionFilterCenterSide {
 
   }
 
@@ -93,7 +93,7 @@
     z-index: 3;
   }
 
-  &__filterRightSide {
+  &__sectionFilterRightSide {
     width: 110px;
   }
 
@@ -136,7 +136,7 @@
 
 @media (max-width: 769px) {
   .catalog {
-    &__filterRightSide {
+    &__sectionFilterRightSide {
       display: none;
     }
   }
@@ -145,7 +145,7 @@
 @media (max-width: 420px) {
   .catalog {
 
-    &__filterLeftSide {
+    &__sectionFilterLeftSide {
 
       & > :first-child {
         content: url("../img/filterIcon3.svg");
@@ -156,7 +156,7 @@
       }
     }
 
-    &__filterCenterSide {
+    &__sectionFilterCenterSide {
       font-size: 12px;
     }
   }
@@ -164,7 +164,7 @@
 
 @media (max-width: 375px) {
   .catalog {
-    .filter {
+    .sectionFilter {
       font-size: 12px;
 
       &__item summary {

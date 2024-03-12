@@ -30,6 +30,7 @@
     .carousel-inner {
       .carousel-item {
         @include flexCenter();
+        height: 100vh;
       }
     }
   }
@@ -59,13 +60,5 @@
       }
     }
   }
-}
-
-@media (max-width: 570px) {
-
-}
-
-@media (max-width: 375px) {
-
 }
 

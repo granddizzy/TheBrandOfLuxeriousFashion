@@ -477,8 +477,7 @@ img {
     align-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0; }
+    justify-content: space-between; }
 .footer__leftSide {
   display: flex;
   justify-content: center;
@@ -569,8 +568,7 @@ img {
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-between;
-    align-items: center;
-    padding: 0; }
+    align-items: center; }
   .footer .socials__icons {
     min-width: 150px;
     display: flex;
@@ -659,7 +657,8 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    align-content: center; }
+    align-content: center;
+    height: 100vh; }
   .productSlider .carousel-item {
     transition: opacity 1s !important; }
     .productSlider .carousel-item img {
@@ -818,7 +817,7 @@ img {
       grid-template-columns: 1fr; }
     .recommended .catalogItems > div:nth-child(2) {
       display: none; } }
-.catalog__filter {
+.catalog__sectionFilter {
   color: #6F6E6E;
   font-family: Lato, sans-serif;
   font-style: normal;
@@ -831,22 +830,22 @@ img {
   align-content: center;
   justify-content: space-between;
   height: 132px; }
-  .catalog__filter summary {
+  .catalog__sectionFilter summary {
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center; }
-  .catalog__filter details {
+  .catalog__sectionFilter details {
     position: relative; }
-.catalog__filterLeftSide {
+.catalog__sectionFilterLeftSide {
   color: #6F6E6E; }
-  .catalog__filterLeftSide summary {
+  .catalog__sectionFilterLeftSide summary {
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
     justify-content: flex-start; }
-  .catalog__filterLeftSide .catalog__detailsBox2 {
+  .catalog__sectionFilterLeftSide .catalog__detailsBox2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -861,25 +860,25 @@ img {
     line-height: normal;
     font-weight: 400;
     font-size: 14px; }
-    .catalog__filterLeftSide .catalog__detailsBox2 a {
+    .catalog__sectionFilterLeftSide .catalog__detailsBox2 a {
       color: #6F6E6E; }
-  .catalog__filterLeftSide > :first-child {
+  .catalog__sectionFilterLeftSide > :first-child {
     color: #000;
     font-weight: 600; }
-  .catalog__filterLeftSide > :first-child::after {
+  .catalog__sectionFilterLeftSide > :first-child::after {
     content: url("../img/filter_icon2.svg");
     margin-left: 15px; }
-  .catalog__filterLeftSide .catalog__detailsBox {
+  .catalog__sectionFilterLeftSide .catalog__detailsBox {
     background-color: #FFF;
     box-shadow: 6px 4px 35px 0 rgba(0, 0, 0, 0.21);
     padding: 20px;
     width: 360px;
     top: -16px;
     margin-top: 5px; }
-    .catalog__filterLeftSide .catalog__detailsBox #filterButton {
+    .catalog__sectionFilterLeftSide .catalog__detailsBox #filterButton {
       color: #F16D7F;
       font-weight: 600; }
-    .catalog__filterLeftSide .catalog__detailsBox details[open] summary {
+    .catalog__sectionFilterLeftSide .catalog__detailsBox details[open] summary {
       color: #F16D7F; }
 .catalog__menuFilter > :first-child svg {
   margin-left: 15px; }
@@ -890,7 +889,7 @@ img {
 .catalog__menuFilter {
   position: absolute;
   z-index: 3; }
-.catalog__filterRightSide {
+.catalog__sectionFilterRightSide {
   width: 110px; }
 .catalog__pages {
   margin-top: 48px;
@@ -926,19 +925,19 @@ img {
     color: #F16D7F !important; }
 
 @media (max-width: 769px) {
-  .catalog__filterRightSide {
+  .catalog__sectionFilterRightSide {
     display: none; } }
 @media (max-width: 420px) {
-  .catalog__filterLeftSide > :first-child {
+  .catalog__sectionFilterLeftSide > :first-child {
     content: url("../img/filterIcon3.svg"); }
-  .catalog__filterLeftSide > :first-child::after {
+  .catalog__sectionFilterLeftSide > :first-child::after {
     display: none; }
-  .catalog__filterCenterSide {
+  .catalog__sectionFilterCenterSide {
     font-size: 12px; } }
 @media (max-width: 375px) {
-  .catalog .filter {
+  .catalog .sectionFilter {
     font-size: 12px; }
-    .catalog .filter__item summary {
+    .catalog .sectionFilter__item summary {
       gap: 5px; } }
 .shoppingCart {
   display: flex;
