@@ -63,6 +63,19 @@
     width: 100%;
   }
 
+  fieldset {
+    @include flexCenter();
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+
+    legend {
+      margin-bottom: 20px;
+    }
+  }
+
   input {
     width: 100%;
     padding: 15px;

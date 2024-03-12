@@ -1234,6 +1234,18 @@ img {
     align-items: flex-start;
     gap: 20px;
     width: 100%; }
+  .regForm fieldset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%; }
+    .regForm fieldset legend {
+      margin-bottom: 20px; }
   .regForm input {
     width: 100%;
     padding: 15px;
