@@ -946,6 +946,8 @@ img {
     color: #F16D7F !important; }
 
 @media (max-width: 769px) {
+  .catalog__sectionFilter {
+    height: 80px; }
   .catalog__sectionFilterRightSide {
     display: none; } }
 @media (max-width: 420px) {
