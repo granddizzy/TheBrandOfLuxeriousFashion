@@ -19,7 +19,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
             integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
             crossorigin="anonymous"></script>
-
+    <script src="js/script.js" defer></script>
     <title>Shop</title>
     <!--    <script src="js/script.js" defer></script>-->
 </head>
@@ -134,15 +134,35 @@
                     competencies rather than exceptional portals.</p>
                 <p class="productDescription__price">$561</p>
                 <div class="productDescription__line2"></div>
-                <div class="productDescription__filter">
-                    <details class="productDescription__filterItem">
+                <div class="productDescription__filter filter">
+                    <details class="filter__item">
                         <summary>CHOOSE COLOR</summary>
+                        <div class="filter__detailsBox">
+
+                        </div>
                     </details>
-                    <details class="productDescription__filterItem">
+                    <details class="filter__item">
                         <summary>CHOOSE SIZE</summary>
+                        <div class="filter__detailsBox filter__menuSize">
+                            <label>
+                                <input type="checkbox"> XS
+                            </label>
+                            <label>
+                                <input type="checkbox"> S
+                            </label>
+                            <label>
+                                <input type="checkbox"> M
+                            </label>
+                            <label>
+                                <input type="checkbox"> L
+                            </label>
+                        </div>
                     </details>
-                    <details class="productDescription__filterItem">
+                    <details class="filter__item">
                         <summary>QUANTITY</summary>
+                        <div class="filter__detailsBox">
+
+                        </div>
                     </details>
                 </div>
                 <div class="productDescription__button">
@@ -272,6 +292,5 @@
         });
     });
 </script>
-<script src="js/script.js" defer></script>
 </body>
 </html>

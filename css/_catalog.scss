@@ -79,56 +79,27 @@
   }
 
   &__filterCenterSide {
-    @include flexCenter();
-    gap: 30px;
 
-    summary::after {
-      content: url("../img/filter_icon.svg");
-    }
+  }
 
-    summary {
-      @include flexCenter();
-      gap: 15px;
-      position: relative;
-    }
-
-    .catalog__detailsBox {
-      background-color: #FFF;
-      box-shadow: 6px 4px 35px 0 rgba(0, 0, 0, 0.21);
-      padding: 10px;
+  .filter {
+    &__menuSize, &__menuTrending, &__menuPrice {
       width: 80px;
-      left: -10px;
-      margin-top: 5px;
     }
+  }
+
+  &__menuFilter {
+    position: absolute;
+    z-index: 3;
   }
 
   &__filterRightSide {
     width: 110px;
   }
 
-  .catalogItems__items {
-    padding-top: 0;
-  }
-
   &__pages {
     margin-top: 48px;
     margin-bottom: 96px;
-  }
-
-  &__detailsBox {
-    @include flexCenter();
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    z-index: 3;
-
-    details {
-      width: 100%;
-    }
-  }
-
-  &__menuSize, &__menuTrending, &__menuFilter, &__menuPrice {
-    position: absolute;
   }
 
   &__topLevel {
@@ -187,6 +158,18 @@
 
     &__filterCenterSide {
       font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .catalog {
+    .filter {
+      font-size: 12px;
+
+      &__item summary {
+        gap: 5px;
+      }
     }
   }
 }

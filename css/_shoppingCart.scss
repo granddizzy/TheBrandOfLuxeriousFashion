@@ -102,6 +102,9 @@
       width: 100%;
       padding: 20px;
       margin-top: 20px;
+
+      color: $exclusiveColor;
+      border-color: $exclusiveColor;
     }
 
     &__line {
@@ -221,10 +224,6 @@
 @media (max-width: 1060px) {
   .shoppingCart {
     flex-direction: column;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 16px;
-    padding-right: 16px;
     width: 100%;
     gap: 40px;
 
@@ -255,6 +254,7 @@
 
 @media (max-width: 770px) {
   .shoppingCart {
+
     &__shippingAdress {
       width: 100%;
     }
@@ -268,18 +268,17 @@
 
 @media (max-width: 570px) {
   .shoppingCart {
+    margin-top: 50px;
+
     .shoppingItem {
       height: 188px;
 
       &__rightSideContent {
         max-width: 140px;
-        //margin-top: 20px;
-        //color: #656565;
 
         h1 {
           font-size: 16px;
           margin-bottom: 20px;
-          //color: #222222;
         }
 
         p {
@@ -293,6 +292,10 @@
         right: 10px;
         content: url("../img/cartCrossButtonSmall.svg");
       }
+
+      &__wrap {
+        box-shadow: 8px 10px 15px 0 rgba(0, 0, 0, 0.13);
+      }
     }
 
     &__button_leftSife {
@@ -300,10 +303,9 @@
       width: 175px;
       padding: 10px 5px;
     }
-  }
 
-  .container {
-    //padding-left: 10px;
-    //padding-right: 10px;
+    &__buttons {
+      padding-top: 10px;
+    }
   }
 }
