@@ -1214,15 +1214,15 @@ img {
     margin-left: 20px; }
     .registration__rightSide h1 {
       font-size: 24px;
-      margin-bottom: 25px; }
+      margin-bottom: 30px; }
     .registration__rightSide p {
-      margin-bottom: 25px; }
+      margin-bottom: 30px; }
     .registration__rightSide ul {
       margin: 0;
       padding: 0;
       list-style-type: none; }
     .registration__rightSide li {
-      padding-bottom: 15px; }
+      padding-bottom: 20px; }
     .registration__rightSide li:before {
       content: url("../img/checkmark.svg");
       margin-right: 20px; }
@@ -1324,7 +1324,12 @@ img {
     .regForm__button:hover svg path {
       fill: #FFF; }
 
-@media (max-width: 950px) {
+@media (max-width: 768px) {
+  .registration__rightSide {
+    font-size: 16px; }
+    .registration__rightSide h1 {
+      font-size: 16px; } }
+@media (max-width: 700px) {
   .registration {
     flex-direction: column;
     gap: 40px; }
@@ -1334,11 +1339,6 @@ img {
       max-width: none;
       width: 100%;
       margin-left: 0; } }
-@media (max-width: 768px) {
-  .registration__rightSide {
-    font-size: 16px; }
-    .registration__rightSide h1 {
-      font-size: 16px; } }
 .filter {
   font-size: 14px;
   color: #6f6e6e;

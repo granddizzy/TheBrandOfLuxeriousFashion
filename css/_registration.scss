@@ -21,11 +21,11 @@
 
     h1 {
       font-size: 24px;
-      margin-bottom: 25px;
+      margin-bottom: 30px;
     }
 
     p {
-      margin-bottom: 25px;
+      margin-bottom: 30px;
     }
 
     ul {
@@ -35,7 +35,7 @@
     }
 
     li {
-      padding-bottom: 15px;
+      padding-bottom: 20px;
     }
 
     li:before {
@@ -160,7 +160,19 @@
   }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 768px) {
+  .registration {
+    &__rightSide {
+      font-size: 16px;
+
+      h1 {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
   .registration {
     flex-direction: column;
     gap: 40px;
@@ -173,18 +185,6 @@
       max-width: none;
       width: 100%;
       margin-left: 0;
-    }
-  }
-}
-
-@media (max-width: 768px) {
-  .registration {
-    &__rightSide {
-      font-size: 16px;
-
-      h1 {
-        font-size: 16px;
-      }
     }
   }
 }
