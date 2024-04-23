@@ -116,7 +116,7 @@
         <p class="description">Shop for items based on what we featured in this week</p>
         <div class="catalogItems">
             <template id="templateFeturedItem">
-                <div class="catalogItems__item catalogItem">
+                <div class="catalogItems__item catalogItem" data-id="">
                     <div class="catalogItem__photo">
                         <img src="" alt="Fetured item">
                         <div class="catalogItem__fill">
@@ -158,6 +158,35 @@
                 <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
                     models.</p>
             </div>
+        </div>
+    </section>
+    <section class="shoppingCart container">
+        <div class="shoppingCart__leftSide">
+            <template id="templateShoppingCartItem">
+                <div class="shoppingCart__item shoppingItem" data-id="">
+                    <div class="shoppingItem__wrap">
+                        <img src="" alt="">
+                        <div class="shoppingItem__rightSide">
+                            <div class="shoppingItem__rightSideContent">
+                                <h1></h1>
+                                <p>Price: <span class="shoppingItem__price"></span></p>
+                                <p>Color: <span class="shoppingItem__data"></span></p>
+                                <p>Size: <span class="shoppingItem__data"></span></p>
+                                <p>
+                                    <label>
+                                        Quantity:
+                                        <input class="shoppingItem__quantity" name="quantity" placeholder=""
+                                               type="number">
+                                    </label>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shoppingItem__crossButton"></div>
+                </div>
+            </template>
+        </div>
+        <div class="shoppingCart__rightSide">
         </div>
     </section>
 </main>
