@@ -1,4 +1,4 @@
-"use strickt";
+"use strict";
 
 // menu
 const menu = document.querySelector(".mainMenu");
