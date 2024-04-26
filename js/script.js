@@ -17,3 +17,6 @@ document.querySelector('#catalogButton').addEventListener('click', function () {
 const jsonObj = JSON.parse(jsonData);
 
 const shoppingCart = new Map();
+
+const basketCounter = document.querySelector('div.basketCounter');
+basketCounter.textContent = shoppingCart.size;

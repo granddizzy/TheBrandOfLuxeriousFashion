@@ -75,4 +75,6 @@ function checkShoppingCartVisibility() {
   } else {
     if (!shoppingCartContainterEl.classList.contains('hidden')) shoppingCartContainterEl.classList.add('hidden');
   }
+
+  basketCounter.textContent = shoppingCart.size;
 }
