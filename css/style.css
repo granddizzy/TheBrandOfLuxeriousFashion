@@ -17,6 +17,9 @@ img {
   max-width: 100%;
   display: block; }
 
+.hidden {
+  display: none !important; }
+
 .container {
   max-width: 1140px !important;
   margin: 0 auto; }
@@ -1087,7 +1090,9 @@ img {
         outline: none; }
     .shoppingCart .shoppingItem__price {
       color: #F16D7F; }
-    .shoppingCart .shoppingItem__data {
+    .shoppingCart .shoppingItem__color {
+      color: #6F6E6E; }
+    .shoppingCart .shoppingItem__size {
       color: #6F6E6E; }
     .shoppingCart .shoppingItem__quantity {
       width: 50px;

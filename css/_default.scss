@@ -20,6 +20,10 @@ img {
   display: block;
 }
 
+.hidden {
+  display: none !important;
+}
+
 @import "vars";
 
 .container {
