@@ -16,16 +16,8 @@ document.querySelector('#catalogButton').addEventListener('click', function () {
 
 const jsonObj = JSON.parse(jsonData);
 
-const shoppingCart = new Map();
-
-const basketCounter = document.querySelector('div.basketCounter');
-basketCounter.textContent = shoppingCart.size;
-
 const catalogItemsEl = document.querySelector('div.catalogItems');
-const templateShoppingCartItemEl = document.querySelector('#templateShoppingCartItem').content;
 const templateFeturedItemEl = document.querySelector('#templateFeturedItem').content;
-const shoppingCartEl = document.querySelector('div.shoppingCart__leftSide');
-const shoppingCartContainterEl = document.querySelector('section.shoppingCartContainer');
 
 // fetured items
 jsonObj.items.forEach(item => {
@@ -39,6 +31,14 @@ jsonObj.items.forEach(item => {
   catalogItemsEl.appendChild(clone);
 })
 
+// shopping carts
+const shoppingCart = new Map();
+const shoppingCartEl = document.querySelector('div.shoppingCart__leftSide');
+const shoppingCartContainterEl = document.querySelector('section.shoppingCartContainer');
+const templateShoppingCartItemEl = document.querySelector('#templateShoppingCartItem').content;
+
+const basketCounter = document.querySelector('div.basketCounter');
+basketCounter.textContent = shoppingCart.size;
 document.querySelector('div.catalogItems').addEventListener('click', function (e) {
   // Метод closest() возвращает ближайший родительский элемент, который соответствует указанному селектору, или null,
   //   если такой элемент не найден.
