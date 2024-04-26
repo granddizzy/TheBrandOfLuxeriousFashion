@@ -2,7 +2,7 @@ const catalogItemsEl = document.querySelector('div.catalogItems');
 const templateShoppingCartItemEl = document.querySelector('#templateShoppingCartItem').content;
 const templateFeturedItemEl = document.querySelector('#templateFeturedItem').content;
 const shoppingCartEl = document.querySelector('div.shoppingCart__leftSide');
-const shoppingCartContainterEl = document.querySelector('section.shoppingCart');
+const shoppingCartContainterEl = document.querySelector('section.shoppingCartContainer');
 
 // fetured items
 jsonObj.items.forEach(item => {
@@ -29,7 +29,7 @@ document.querySelector('div.catalogItems').addEventListener('click', function (e
   }
 })
 
-document.querySelector('section.shoppingCart').addEventListener('click', function (e) {
+document.querySelector('div.shoppingCart').addEventListener('click', function (e) {
   if (e.target.classList.contains('shoppingItem__crossButton')) {
     const itemId = e.target.closest('div.shoppingItem').getAttribute('data-id')
     delCartItem(itemId);

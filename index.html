@@ -161,33 +161,36 @@
             </div>
         </div>
     </section>
-    <section class="shoppingCart container hidden">
-        <div class="shoppingCart__leftSide">
-            <template id="templateShoppingCartItem">
-                <div class="shoppingCart__item shoppingItem" data-id="">
-                    <div class="shoppingItem__wrap">
-                        <img src="" alt="">
-                        <div class="shoppingItem__rightSide">
-                            <div class="shoppingItem__rightSideContent">
-                                <h1></h1>
-                                <p>Price: <span class="shoppingItem__price"></span></p>
-                                <p>Color: <span class="shoppingItem__color"></span></p>
-                                <p>Size: <span class="shoppingItem__size"></span></p>
-                                <p>
-                                    <label>
-                                        Quantity:
-                                        <input class="shoppingItem__quantity" name="quantity" placeholder=""
-                                               type="number" value="1">
-                                    </label>
-                                </p>
+    <section class="container shoppingCartContainer hidden">
+        <h1 class="shoppingCartContainer__title">Cart Items</h1>
+        <div class="shoppingCart">
+            <div class="shoppingCart__leftSide">
+                <template id="templateShoppingCartItem">
+                    <div class="shoppingCart__item shoppingItem" data-id="">
+                        <div class="shoppingItem__wrap">
+                            <img src="" alt="">
+                            <div class="shoppingItem__rightSide">
+                                <div class="shoppingItem__rightSideContent">
+                                    <h1></h1>
+                                    <p>Price: <span class="shoppingItem__price"></span></p>
+                                    <p>Color: <span class="shoppingItem__color"></span></p>
+                                    <p>Size: <span class="shoppingItem__size"></span></p>
+                                    <p>
+                                        <label>
+                                            Quantity:
+                                            <input class="shoppingItem__quantity" name="quantity" placeholder=""
+                                                   type="number" value="1">
+                                        </label>
+                                    </p>
+                                </div>
                             </div>
                         </div>
+                        <div class="shoppingItem__crossButton"></div>
                     </div>
-                    <div class="shoppingItem__crossButton"></div>
-                </div>
-            </template>
-        </div>
-        <div class="shoppingCart__rightSide">
+                </template>
+            </div>
+            <div class="shoppingCart__rightSide">
+            </div>
         </div>
     </section>
 </main>

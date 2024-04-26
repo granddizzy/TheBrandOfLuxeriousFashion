@@ -81,8 +81,13 @@
       p {
         margin: 0;
       }
+      
+      &:hover {
+        background-color: #9F9F9F;
+        transition: background-color 0.5s ease;
+      }
     }
-
+    
     &__title {
       color: #000;
       @include fontStyle1(40, 13px);
@@ -122,8 +127,6 @@
 
 @media (max-width: 770px) and (min-width: 376px) {
   .feturedItems {
-    //margin-right: 16px;
-    //margin-left: 16px;
     margin-top: 109px;
 
     &__allButton {

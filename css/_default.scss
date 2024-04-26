@@ -25,6 +25,7 @@ img {
 }
 
 @import "vars";
+@import "mixins";
 
 .container {
   max-width: $containerWidth !important;
@@ -34,6 +35,14 @@ img {
 .bigContainer {
   max-width: $siteWidth;
   margin: 0 auto;
+}
+
+.shoppingCartContainer {
+  &__title {
+    text-align: center;
+    @include fontStyle1(400, 24px);
+    margin-top: 60px;
+  }
 }
 
 @media (max-width: 1172px) {

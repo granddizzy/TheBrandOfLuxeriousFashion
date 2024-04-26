@@ -4,7 +4,7 @@
 .shoppingCart {
   @include flexCenter();
   @include fontStyle1(400, 22px);
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 100px;
   justify-content: space-between;
   align-items: flex-start;
